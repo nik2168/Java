@@ -26,8 +26,8 @@ public class MatrixTranspose {
 
        System.out.println("The transpose of matrix is : ");
 
-       for(int i = 0; i < row; i++){
-        for(int j = 0; j < col; j++){
+       for(int i = 0; i < col; i++){
+        for(int j = 0; j < row; j++){
             System.out.print(matrixTranspose[i][j] + " ");
         }
         System.out.println();

@@ -27,6 +27,8 @@ public class HcfLcm {
         System.out.print("Enter second number: ");
         int num2 = sc.nextInt();
 
+        sc.close();
+
      int hcf = findHCF(num1, num2);
      int lcm = findLCM(num1, num2, hcf);
 

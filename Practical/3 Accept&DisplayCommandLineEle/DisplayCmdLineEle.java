@@ -11,7 +11,7 @@ public class DisplayCmdLineEle {
 
 
 // output
-// javac DisplayCmdLineEle.
+// javac DisplayCmdLineEle.java
 // java DisplayCmdLineEle Hello World !
 // Hello
 // World
