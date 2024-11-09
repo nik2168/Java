@@ -34,7 +34,7 @@ public class GrossSalary {
         int basicSalary = sc.nextInt();
         int bonus = sc.nextInt();
         int medicalAllowance = sc.nextInt();
-
+        sc.close();
         Salary temp = new Salary(basicSalary, bonus, medicalAllowance);
 
         temp.grossSalary();
