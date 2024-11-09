@@ -5,7 +5,7 @@ public class RecursiveNonRecursiveFibonacci {
     static void printFib(int n, int i, int j){
 
 
-        for(int y = 2; y <= n; y++){
+        for(int y = 3; y <= n; y++){
               int t = i;
               i = j;
               j = i + t;
@@ -15,11 +15,11 @@ public class RecursiveNonRecursiveFibonacci {
     }
 
     static void printFibRecursive(int t, int n, int i, int j){
-         if(t >= n) {
-            System.out.println(j);
+         if(t > n) {
             return;
          }
          t += 1;
+                  if(t == n)   System.out.println(j);
          printFibRecursive(t, n, j, j+i);
     }
 
@@ -32,7 +32,16 @@ public class RecursiveNonRecursiveFibonacci {
     Scanner a = new Scanner(System.in);
     n = a.nextInt();
 
-    a.close();   
+    a.close(); 
+    
+    if(n == 1) {
+        System.out.println(n + "st Fibonacci is : 0");
+        return;
+    }
+    if(n == 2) {
+    System.out.println(n + "nd Fibonacci is : 1");
+    return;
+    }
     
     System.out.println(n + "th Fibonacci non-recursive is : ");
     printFib(n, 0, 1);
