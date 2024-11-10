@@ -1,7 +1,7 @@
 
 public class Palindrome {
     public static void main(String[] args) {
-        String t = "DoID";
+        String t = "HigiH";
 
         Boolean res = true;
 
@@ -17,7 +17,11 @@ public class Palindrome {
             j--;
         }
 
-       if(res) System.out.println(t + " is palindrome");
+       if(res) System.out.println(t + " is a palindrome");
 
     }
 }
+
+
+// output
+// HigiH is palindrome
