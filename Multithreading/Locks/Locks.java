@@ -7,6 +7,10 @@ import java.util.concurrent.locks.ReentrantLock;
 
 // locks are explict types that helps to manipulate locks according to our needs
 
+// In sysnchronized the lock could leads to blocking of other threads for a infinite time loop while
+// locks helps to set lock or recheck for lock after a intervals of time
+// Sychronization disadvantages and locks advantages are : 1. Fairness 2. Blocking 3. Interruptability in locks 4. Read/Write locking using 2 locks 
+
 // private final Lock lock = new ReentrantLock(){};
 
 
@@ -25,7 +29,7 @@ class BankAccount{
 try {
 
         // lock.lock() == synchronize -> will wait until previous thread gets free
-       if(lock.tryLock(4000, TimeUnit.MILLISECONDS)){ // lock.tryLock() will wait for 1000 ms and then check if lock is free else moveon
+       if(lock.tryLock(4000, TimeUnit.MILLISECONDS)){ // lock.tryLock() will wait for 1000 ms and then check if lock is free else move on
           if(amount <= balance){
 
             try {
