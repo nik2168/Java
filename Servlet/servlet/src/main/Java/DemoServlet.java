@@ -1,8 +1,9 @@
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.servlet.GenericServlet;
+// import java.servlet.GenericServlet;
+import j.
 
-public class DemoServlet extends GenericServlet{
+public class DemoServlet{
     
 public void service(ServeletRequest req, ServletResponse res) throws IOException, ServletException{
     String name = req.getParameter("username");

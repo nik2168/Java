@@ -8,3 +8,6 @@ Create Java Project / maven / webapps/ 1.4 / select folder / then paste below sn
     <version>2.5</version>
     <scope>provided</scope>
 </dependency>
+
+
+// brew install maven 
