@@ -1,5 +1,8 @@
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
 // here we are creating files and reading them using the File class & FileWrtier class in java
 
@@ -12,6 +15,7 @@ public class FileClassToReadAnyFile{
        File a = new File("./data.txt");
         String fileContent = "";
 
+        
        try {
         Scanner sc = new Scanner(a);
    while(sc.hasNextLine()){
@@ -24,6 +28,8 @@ public class FileClassToReadAnyFile{
         System.out.println("File not found mr.");
     }
 
+
+    
        try {
         FileWriter w = new FileWriter("./data2.txt");
         w.write(fileContent);
