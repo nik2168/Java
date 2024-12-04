@@ -1,5 +1,4 @@
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
@@ -90,7 +89,7 @@ public class Locks {
             ReentrantLock lock = new ReentrantLock();  
 
         BankAccount acc = new BankAccount(lock);
-        Runnable task = new Runnable() {
+        Runnable task = new Runnable() { // annoymus class
             public void run(){
                 acc.withdraw(50);
             }
